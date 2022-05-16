@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bkMZV4ncIdIaeU6SRUHP2+TVxmwnELVu2wN7bHIO3IY=",
+  "Source": "OpheliaCommerce.Api",
+  "BasePath": "_content/OpheliaCommerce.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

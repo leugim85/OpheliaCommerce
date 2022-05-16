@@ -1,0 +1,28 @@
+<h3>Listado De Productos</h3>
+  
+        <div class="col-6">
+
+            <table class="table">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Id</th>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products">
+                        <td>{{ product.id }}</td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.description }}</td>
+                        <td>{{ product.price }}</td>
+                        <td>
+                            <a class="material-icons opacity-10 m-3" (click)="deleteProduct(product.id)">delete</a>
+                            <a class="material-icons opacity-10 m-3" [routerLink]="[ '/products/update', product.id ]">upload</a>                        
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>

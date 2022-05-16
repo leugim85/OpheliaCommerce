@@ -1,0 +1,70 @@
+<h2>Agregar Compra</h2>
+<hr />
+
+<form [formGroup]="shoppingForm" (ngSubmit)="save()">
+    <div class="mb-3 row" >
+        <label class="col-sm-3 col-form-label">Nombre</label>
+
+        <div class="col-sm-9" formControlName="clientId" >
+            <select class="form-select form-control" formControlName="clientId" aria-label="Default select example">
+                <option selected></option>
+                <option *ngFor="let client of clients"  value={{client.id}} >{{ client.name }}</option>
+            </select>
+            <span class="form-text text-danger" *ngIf="invalidField('clientId')">
+                Este campo es obligatorio
+            </span>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Fecha</label>
+        <div class="col-sm-9">
+            <input matInput class=" bg-white opacity-7" type='datetime-local' formControlName="date">
+            <label class="" errorMsg message="Seleccione una fecha" *ngIf="invalidField('date')"></label>
+            <mat-datepicker touchUi #picker></mat-datepicker>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Agregar Producto</label>
+        <div class="col-sm-9">            
+            <div class="input-group" [formGroup]="newProduct">
+
+                <select class="form-select form-control" formControlName="id" aria-label="Default select example">
+                    <option selected></option>
+                    <option *ngFor="let product of products"  value= {{product.id}} >{{ product.name }}</option>
+                </select>
+                <input class="form-control" type="number" placeholder="Cantidad" formControlName="quantity" />
+
+                <button class="btn btn-outline-primary" type="button" (click)="addProduct()">
+                    Agregar
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Código de producto</label>
+
+        <div class="col-sm-9" formArrayName="products">
+            <div class="input-group mb-1" *ngFor="let product of newProductArr.controls; let i = index">
+
+                <input class="form-control mb-1" value={{product.value.id}}/>
+                <input class="form-control mb-1" value={{product.value.quantity}}/>
+
+
+                <button class="btn btn-outline-danger mb-1" type="button" (click)=" delete(i)">
+                    Eliminar
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="row-sm-12">
+            <button type="submit" class="btn btn-primary" (click)="save()">Guardar</button>
+        </div>
+    </div>
+</form>

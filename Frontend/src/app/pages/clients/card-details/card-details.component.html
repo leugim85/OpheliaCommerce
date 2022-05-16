@@ -1,0 +1,13 @@
+<div class="card"  *ngIf="id != 0">
+    <h2 class="card-header">Nombre: {{ client.name }}</h2>
+    <h3 class="card-title  m-3">Email: {{ client.email }}</h3>
+    <p class="card-title  m-3">Consumo total del cliente: <strong>{{ client.totalSpend | currency }}</strong></p>
+    <div class="card-body" *ngFor="let shopping of shoppings objToArray">
+        <hr>
+         <p class="card-text">Fecha de la compra: <strong>{{ shopping.date | date }}</strong></p>
+         <p class="card-text">Valor de la compra: <strong>{{ shopping.payValue| currency }}</strong></p>
+         <p><strong>Productos:</strong></p>
+         <p class="card-text" *ngFor="let product of shopping.products objToArray"><strong>{{ product.name}}</strong>,
+             Precio: <small>{{ product.price | currency }}</small>, Cantidad: {{ product.quantity }} </p>
+    </div>
+ </div>

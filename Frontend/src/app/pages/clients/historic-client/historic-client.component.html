@@ -1,0 +1,14 @@
+<h2>Clientes</h2>
+<div class="row">
+    <div class="col col-8">
+        <form (ngSubmit)="getDetails()">
+            <select class="form-select form-select-lg mb-3" name="idString" [(ngModel)]="idString" aria-label=".form-select-lg example">
+                <option selected value="0">Seleccione Al Cliente Que Quiere Consultar</option>
+                <option *ngFor="let client of clients" ngDefaultControl value={{client.id}}>{{ client.name }}</option>
+            </select>
+            <button type="submit" (click)="getDetails()" class="btn btn-primary" >Consultar</button>
+        </form>
+    </div>
+</div>
+
+<app-card-details [id]="id"></app-card-details>

@@ -1,0 +1,13 @@
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\bin\Debug\net6.0\OpheliaCommerce.Domain.deps.json
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\bin\Debug\net6.0\OpheliaCommerce.Domain.dll
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\bin\Debug\net6.0\ref\OpheliaCommerce.Domain.dll
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\bin\Debug\net6.0\OpheliaCommerce.Domain.pdb
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\obj\Debug\net6.0\OpheliaCommerce.Domain.GlobalUsings.g.cs
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\obj\Debug\net6.0\OpheliaCommerce.Domain.csproj.AssemblyReference.cache
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\obj\Debug\net6.0\OpheliaCommerce.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\obj\Debug\net6.0\OpheliaCommerce.Domain.AssemblyInfoInputs.cache
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\obj\Debug\net6.0\OpheliaCommerce.Domain.AssemblyInfo.cs
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\obj\Debug\net6.0\OpheliaCommerce.Domain.csproj.CoreCompileInputs.cache
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\obj\Debug\net6.0\OpheliaCommerce.Domain.dll
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\obj\Debug\net6.0\ref\OpheliaCommerce.Domain.dll
+C:\Source\OpheliaCommerce\OpheliaCommerce.Domain\obj\Debug\net6.0\OpheliaCommerce.Domain.pdb

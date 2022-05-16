@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7667ff17-ef04-45cf-8283-d62991a1d99f": {
+      "ProjectGuid": "7667ff17-ef04-45cf-8283-d62991a1d99f",
+      "DisplayName": "OpheliaCommerce.Domain",
+      "ColorIndex": 0
+    },
+    "72f3f0e2-6de3-462f-a251-bc0edcaec4f8": {
+      "ProjectGuid": "72f3f0e2-6de3-462f-a251-bc0edcaec4f8",
+      "DisplayName": "OpheliaCommerce.Data",
+      "ColorIndex": 1
+    },
+    "43f36b25-b603-4ba5-ac64-c3b041f0c000": {
+      "ProjectGuid": "43f36b25-b603-4ba5-ac64-c3b041f0c000",
+      "DisplayName": "OpheliaCommerce.App",
+      "ColorIndex": 2
+    },
+    "67f4b692-0318-4d46-9ebc-9e5a1b7aba72": {
+      "ProjectGuid": "67f4b692-0318-4d46-9ebc-9e5a1b7aba72",
+      "DisplayName": "OpheliaCommerce.Api",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}

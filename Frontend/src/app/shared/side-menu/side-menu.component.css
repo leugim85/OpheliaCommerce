@@ -1,0 +1,8 @@
+.container{
+    height: 600px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+  }

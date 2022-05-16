@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0w3wZPTKMYseLZAUJLv4LCPmihM0B8atLb+IIq9Og6C6k9uaWnvgvdWSLsYl7nBmuFI6LkkYeovSCDsiZ7m98A==",
+  "success": true,
+  "projectFilePath": "C:\\Source\\OpheliaCommerce\\Backend\\OpheliaCommerce.Domain\\OpheliaCommerce.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\migo8\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\migo8\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,53 @@
+<hr>
+<div class="row m-3 mt-5">
+  <div class="col-lg-4 col-md-4 col-sm-4"></div>
+  <div class="row">
+    <div class="card z-index-2">
+      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
+        <div class="bg-gradient-secondary shadow-primary border-radius-lg py-3 pe-1 ">
+          <div class="chart">
+            <div class="container">
+              <div class="row">
+                <h1 class="ml-10" *ngIf="!isUpdating">Agregar Nuevo Producto</h1>
+                <h1 class="ml-10" *ngIf="isUpdating">Editar Producto Producto</h1>
+                <hr>
+                <canvas id="chart-bars" class="chart-canvas" height="10"></canvas>
+
+                <form [formGroup]="productForm" (ngSubmit)="saveProduct(productForm)" class="align-items-center">
+
+                  <div class=" container">
+                    <div class="row">
+                      <div class="col-12 col-lg-2 col-md-3 " >Nombre</div>
+                      <input class="col-12 col-lg-4 col-md-9  bg-white opacity-7" formControlName="name">
+                       <label class="col-12 col-lg-4 col-md-9" *ngIf="invalidField('name')" errorMsg></label>
+                      <div class="col-12 col-lg-2 col-md-3">Stock</div>
+                      <input class="col col-lg-4 col-md-9 bg-white opacity-7" formControlName="stock">
+                      <label class="col-12 col-lg-4 col-md-9" errorMsg *ngIf="invalidField('stock')"></label> 
+                    <br>
+                    <div class="col-12 col-lg-2 col-md-3">Precio:</div>
+                    <input class="col-12 col-lg-4 col-md-9 bg-white opacity-7" formControlName="price">
+                    <label class="col-12 col-lg-4 col-md-9" errorMsg  *ngIf="invalidField('price')"></label>
+                    <div class="col-12 col-lg-2 col-md-3">Id Categoria:</div>
+                    <input class="col-12 col-lg-4 col-md-9 bg-white opacity-7" formControlName="categoryId">
+                    <label class="col-12 col-lg-4 col-md-9" errorMsg  *ngIf="invalidField('categoryId')"></label>
+                      <div class="col-12 col-lg-2 col-md-3">Descripción:</div>
+                      <input class="col-12 col-lg-4 col-md-9 bg-white opacity-7" formControlName="description">
+                      <label class="col-12 col-lg-4 col-md-9" errorMsg  *ngIf="invalidField('description')"></label>
+                      <br>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <button class="btn btn-primary" *ngIf="!isUpdating" (click)="saveProduct(productForm)">Guardar</button>
+        <button class="btn btn-success" *ngIf="isUpdating" (click)="saveProduct(productForm)">Actualizar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
